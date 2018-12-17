@@ -2,9 +2,9 @@ pipeline {
     agent any
     
     stages {
-        stage('build') {
+        stage('pull_request') {
             steps {
-                echo 'hello world!'
+                exit 1
             }
         }
     }
