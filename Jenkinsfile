@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('pull_request') {
             steps {
-                echo 'hello world!'
+                exit 1
             }
         }
     }
