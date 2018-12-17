@@ -1,3 +1,10 @@
-    gitHubPRStatus githubPRMessage('''${GITHUB_PR_COND_REF}
-    run
-    started''')
+pipeline {
+    agent { docker { image 'node:6.3' } }
+    stages {
+        stage('build') {
+            steps {
+                echo 'hello world!'
+            }
+        }
+    }
+}
